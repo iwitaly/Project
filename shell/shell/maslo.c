@@ -13,7 +13,7 @@
 
 void program_run (int argc,char** argv)
 {
-  char** arguments=(char**) malloc ((argc-1)*sizeof(char*));
+	char** arguments=(char**) malloc ((argc-1)*sizeof(char*));
 	if (arguments==NULL)
 	{
 		fprintf(stderr,"I can not give you such amount of memory");
@@ -32,7 +32,7 @@ void shall ();
 {
 	while (true)
 	{
-		printf ("$: ");
+		printf ("\n$: ");
 		getline (
 		 
 	}
@@ -43,5 +43,5 @@ int main (inr argc,char** argv)
 	printf ("shell in shell");
 	int i;
 	shall();
-  return 0;
+	return 0;
 }
