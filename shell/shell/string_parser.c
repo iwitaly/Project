@@ -61,7 +61,7 @@ char** String_parser (char* string)
 					s=s*2;
 					realloc(parts,s);
 					{
-						for (ii=k;ii<s'++ii)
+						for (ii=k;ii<s;++ii)
 						{
 							parts[ii]=(char*) malloc (100*sizeof(char*));
 						}
