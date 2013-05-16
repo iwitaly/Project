@@ -1,12 +1,12 @@
 char** String_parser (char* string)
 {
-  char** parts=(char**) malloc (100*sizeof(char**));
+	char** parts=(char**) malloc (100*sizeof(char**));//этот массив я заполню распарсереной строкой
 	if (parts==NULL)
 	{
 		printf ("error in malloc");
 		return 0;
 	}
-	int i;
+	int i;//основной счетчик
 	for (i=0;i<100;++i)
 	{
 		parts[i]=(char*) malloc (5*sizeof(char*));
@@ -73,7 +73,9 @@ char** String_parser (char* string)
 				p=100;
 			}
 	}
-	realloc(parts,k);
+	realloc(parts,k+1);
+	sizeOfArrayOfParameters=k+1;
+	parts[k+1]=NULL;
 	if (parts==NULL)
 	{
 		printf ("error in realloc");
